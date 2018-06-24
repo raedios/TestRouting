@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+final class FriendsRouter: Router<FriendsViewController>, FriendsRouter.Routes  {
+    
+    typealias Routes = ProfileRoute
+}

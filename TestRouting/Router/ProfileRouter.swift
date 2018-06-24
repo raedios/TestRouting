@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+final class ProfileRouter: Router<ProfileViewController> {
+    
+    typealias Routes = Closable
+}

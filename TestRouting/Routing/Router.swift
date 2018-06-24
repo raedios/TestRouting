@@ -14,7 +14,7 @@ protocol Closable: class {
 
 protocol RouterProtocol: class {
     associatedtype V: UIViewController
-    var viewController: V? { get }
+    weak var viewController: V? { get }
     
     func open(_ viewController: UIViewController, transition: Transition)
 }

@@ -8,20 +8,42 @@
 
 /* Begin PBXBuildFile section */
 		80BBC6D020DCE92A0095CF75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BBC6CF20DCE92A0095CF75 /* AppDelegate.swift */; };
-		80BBC6D220DCE92A0095CF75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BBC6D120DCE92A0095CF75 /* ViewController.swift */; };
 		80BBC6D520DCE92B0095CF75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80BBC6D320DCE92B0095CF75 /* Main.storyboard */; };
 		80BBC6D720DCE92C0095CF75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80BBC6D620DCE92C0095CF75 /* Assets.xcassets */; };
 		80BBC6DA20DCE92C0095CF75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80BBC6D820DCE92C0095CF75 /* LaunchScreen.storyboard */; };
+		80BBC6EB20DCE9770095CF75 /* PushTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BBC6E420DCE9760095CF75 /* PushTransition.swift */; };
+		80BBC6EC20DCE9770095CF75 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BBC6E520DCE9760095CF75 /* Animator.swift */; };
+		80BBC6ED20DCE9770095CF75 /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BBC6E620DCE9760095CF75 /* Transition.swift */; };
+		80BBC6EE20DCE9770095CF75 /* ModalTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BBC6E720DCE9760095CF75 /* ModalTransition.swift */; };
+		80BBC6F020DCE9770095CF75 /* AppSettingsRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BBC6E920DCE9760095CF75 /* AppSettingsRoute.swift */; };
+		80BBC6F120DCE9770095CF75 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BBC6EA20DCE9760095CF75 /* Router.swift */; };
+		80BBC6F420DCEA330095CF75 /* ProfileRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BBC6F320DCEA330095CF75 /* ProfileRoute.swift */; };
+		80BBC6F720DCEA6D0095CF75 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BBC6F620DCEA6D0095CF75 /* ProfileViewController.swift */; };
+		80BBC6F920DCEC160095CF75 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BBC6F820DCEC160095CF75 /* FriendsViewController.swift */; };
+		80BBC6FC20DCEE280095CF75 /* FriendsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BBC6FB20DCEE280095CF75 /* FriendsRouter.swift */; };
+		80BBC6FE20DCEFE90095CF75 /* ProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BBC6FD20DCEFE90095CF75 /* ProfileRouter.swift */; };
+		80BBC73C20DFD5D80095CF75 /* FreindsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BBC73B20DFD5D80095CF75 /* FreindsBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		80BBC6CC20DCE92A0095CF75 /* TestRouting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestRouting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80BBC6CF20DCE92A0095CF75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		80BBC6D120DCE92A0095CF75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		80BBC6D420DCE92B0095CF75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		80BBC6D620DCE92C0095CF75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80BBC6D920DCE92C0095CF75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80BBC6DB20DCE92C0095CF75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80BBC6E420DCE9760095CF75 /* PushTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushTransition.swift; sourceTree = "<group>"; };
+		80BBC6E520DCE9760095CF75 /* Animator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
+		80BBC6E620DCE9760095CF75 /* Transition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
+		80BBC6E720DCE9760095CF75 /* ModalTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalTransition.swift; sourceTree = "<group>"; };
+		80BBC6E920DCE9760095CF75 /* AppSettingsRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSettingsRoute.swift; sourceTree = "<group>"; };
+		80BBC6EA20DCE9760095CF75 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		80BBC6F320DCEA330095CF75 /* ProfileRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRoute.swift; sourceTree = "<group>"; };
+		80BBC6F620DCEA6D0095CF75 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		80BBC6F820DCEC160095CF75 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		80BBC6FB20DCEE280095CF75 /* FriendsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsRouter.swift; sourceTree = "<group>"; };
+		80BBC6FD20DCEFE90095CF75 /* ProfileRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRouter.swift; sourceTree = "<group>"; };
+		80BBC73B20DFD5D80095CF75 /* FreindsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreindsBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +76,57 @@
 		80BBC6CE20DCE92A0095CF75 /* TestRouting */ = {
 			isa = PBXGroup;
 			children = (
+				80BBC6F520DCEA5E0095CF75 /* VC */,
+				80BBC6F220DCEA260095CF75 /* Routes */,
+				80BBC6FA20DCEC620095CF75 /* Router */,
+				80BBC6E320DCE95F0095CF75 /* Routing */,
 				80BBC6CF20DCE92A0095CF75 /* AppDelegate.swift */,
-				80BBC6D120DCE92A0095CF75 /* ViewController.swift */,
 				80BBC6D320DCE92B0095CF75 /* Main.storyboard */,
 				80BBC6D620DCE92C0095CF75 /* Assets.xcassets */,
 				80BBC6D820DCE92C0095CF75 /* LaunchScreen.storyboard */,
 				80BBC6DB20DCE92C0095CF75 /* Info.plist */,
 			);
 			path = TestRouting;
+			sourceTree = "<group>";
+		};
+		80BBC6E320DCE95F0095CF75 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				80BBC6E520DCE9760095CF75 /* Animator.swift */,
+				80BBC6E920DCE9760095CF75 /* AppSettingsRoute.swift */,
+				80BBC6E720DCE9760095CF75 /* ModalTransition.swift */,
+				80BBC6E420DCE9760095CF75 /* PushTransition.swift */,
+				80BBC6EA20DCE9760095CF75 /* Router.swift */,
+				80BBC6E620DCE9760095CF75 /* Transition.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		80BBC6F220DCEA260095CF75 /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				80BBC6F320DCEA330095CF75 /* ProfileRoute.swift */,
+			);
+			path = Routes;
+			sourceTree = "<group>";
+		};
+		80BBC6F520DCEA5E0095CF75 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				80BBC6F620DCEA6D0095CF75 /* ProfileViewController.swift */,
+				80BBC6F820DCEC160095CF75 /* FriendsViewController.swift */,
+				80BBC73B20DFD5D80095CF75 /* FreindsBuilder.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		80BBC6FA20DCEC620095CF75 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				80BBC6FB20DCEE280095CF75 /* FriendsRouter.swift */,
+				80BBC6FD20DCEFE90095CF75 /* ProfileRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +200,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80BBC6D220DCE92A0095CF75 /* ViewController.swift in Sources */,
+				80BBC6EE20DCE9770095CF75 /* ModalTransition.swift in Sources */,
+				80BBC6FE20DCEFE90095CF75 /* ProfileRouter.swift in Sources */,
+				80BBC6ED20DCE9770095CF75 /* Transition.swift in Sources */,
+				80BBC73C20DFD5D80095CF75 /* FreindsBuilder.swift in Sources */,
+				80BBC6FC20DCEE280095CF75 /* FriendsRouter.swift in Sources */,
+				80BBC6F020DCE9770095CF75 /* AppSettingsRoute.swift in Sources */,
+				80BBC6EC20DCE9770095CF75 /* Animator.swift in Sources */,
+				80BBC6F120DCE9770095CF75 /* Router.swift in Sources */,
+				80BBC6F920DCEC160095CF75 /* FriendsViewController.swift in Sources */,
+				80BBC6F720DCEA6D0095CF75 /* ProfileViewController.swift in Sources */,
+				80BBC6EB20DCE9770095CF75 /* PushTransition.swift in Sources */,
 				80BBC6D020DCE92A0095CF75 /* AppDelegate.swift in Sources */,
+				80BBC6F420DCEA330095CF75 /* ProfileRoute.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

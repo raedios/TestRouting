@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FriendsViewController: UIViewController {
+final class FriendsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,20 +16,19 @@ class FriendsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    private let router: FriendsRouter.Routes
+    
+    init(router: FriendsRouter.Routes) {
+        self.router = router
+        super.init(nibName: nil, bundle: nil)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    required init?(coder aDecoder: NSCoder) {
+        self.router = FriendsRouter()
+        super.init(coder: aDecoder)
     }
-    */
-
+    
+    @IBAction func showProfile(_ sender: Any) {
+        router.openProfile()
+    }
 }

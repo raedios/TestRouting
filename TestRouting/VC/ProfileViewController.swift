@@ -14,9 +14,10 @@ final class ProfileViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
     }
 
-    private let router: ProfileRouter.Routes?
+    private let router: ProfileRouter.Routes
     
     init(router: ProfileRouter.Routes) {
         self.router = router
@@ -24,12 +25,17 @@ final class ProfileViewController: UIViewController {
     }
     
     required init?(coder aDecoder: NSCoder) {
-        self.router = nil
-        super.init(coder: aDecoder)
+        fatalError("init(coder:) has not been implemented")
     }
     
+//    required init?(coder aDecoder: NSCoder) {
+//        self.router = ProfileRouter()
+//        //super.init(coder: aDecoder)
+//        super.init(nibName: nil, bundle: nil)
+//    }
+    
     func closeButtonPressed() {
-        router?.close()
+        router.close()
     }
 
 }
