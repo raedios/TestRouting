@@ -12,12 +12,11 @@ final class FreindsBuilder {
     
     static func module() -> FriendsViewController {
         
-        
 //        let storyboard = UIStoryboard(name: "Main", bundle: nil)
 //        let viewController = storyboard.instantiateViewController(withIdentifier: "FriendsViewController") as! FriendsViewController
         
         let router = FriendsRouter()
-        let viewController = FriendsViewController(router: router)
+        let viewController = FriendsViewController.instantiate(router: router)
         router.viewController = viewController
         return viewController
     }

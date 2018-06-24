@@ -23,7 +23,7 @@ extension ProfileRoute where Self: RouterProtocol {
     func openProfile() {
         
         let router = ProfileRouter()
-        let profileViewController = ProfileViewController(router: router)
+        let profileViewController = ProfileViewController.instantiate(router: router)
         router.viewController = profileViewController
         
         let transition = profileTransition // it's a calculated property so I saved it to the variable in order to have one instance

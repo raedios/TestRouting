@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class FriendsViewController: UIViewController {
+class FriendsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,19 +16,27 @@ final class FriendsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    private let router: FriendsRouter.Routes
+    private var router: FriendsRouter.Routes? = nil
     
-    init(router: FriendsRouter.Routes) {
-        self.router = router
-        super.init(nibName: nil, bundle: nil)
+    static func instantiate(router: FriendsRouter.Routes) -> FriendsViewController {
+        
+        let viewController =  UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FriendsViewController") as! FriendsViewController
+        viewController.router = router
+        
+        return viewController
     }
     
-    required init?(coder aDecoder: NSCoder) {
-        self.router = FriendsRouter()
-        super.init(coder: aDecoder)
-    }
+//    init(router: FriendsRouter.Routes) {
+//        self.router = router
+//        super.init(nibName: nil, bundle: nil)
+//    }
+//
+//    required init?(coder aDecoder: NSCoder) {
+//        self.router = FriendsRouter()
+//        super.init(coder: aDecoder)
+//    }
     
     @IBAction func showProfile(_ sender: Any) {
-        router.openProfile()
+        router?.openProfile()
     }
 }

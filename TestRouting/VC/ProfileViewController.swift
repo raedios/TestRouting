@@ -17,16 +17,24 @@ final class ProfileViewController: UIViewController {
         
     }
 
-    private let router: ProfileRouter.Routes
+    private var router: ProfileRouter.Routes? = nil
     
-    init(router: ProfileRouter.Routes) {
-        self.router = router
-        super.init(nibName: nil, bundle: nil)
+    static func instantiate(router: ProfileRouter.Routes) -> ProfileViewController {
+        
+        let viewController =  UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController
+        viewController.router = router
+        
+        return viewController
     }
     
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
+//    init(router: ProfileRouter.Routes) {
+//        self.router = router
+//        super.init(nibName: nil, bundle: nil)
+//    }
+//
+//    required init?(coder aDecoder: NSCoder) {
+//        fatalError("init(coder:) has not been implemented")
+//    }
     
 //    required init?(coder aDecoder: NSCoder) {
 //        self.router = ProfileRouter()
@@ -35,7 +43,7 @@ final class ProfileViewController: UIViewController {
 //    }
     
     func closeButtonPressed() {
-        router.close()
+        router?.close()
     }
 
 }
